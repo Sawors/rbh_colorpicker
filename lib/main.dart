@@ -1,6 +1,9 @@
+import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:rbh_colorpicker/color_selector.dart';
 import 'package:rbh_colorpicker/colorlib.dart';
 
@@ -87,9 +90,81 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  ColorLib colorLib = ColorLib.empty();
+  Directory getLocalLibraryDir() {
+    const String identifier = "rbh-colorpicker";
+    if (Platform.isLinux || Platform.isMacOS) {
+      return Directory(
+          "${Platform.environment['HOME']}/.local/share/$identifier/libraries");
+    } else if (Platform.isWindows) {
+      return Directory(
+          "${Platform.environment['UserProfile']}\\$identifier\\libraries");
+    }
+
+    throw PlatformException(code: "1", message: "Platform unsupported");
+  }
+
   Color color = Color.fromARGB(
       255, Random().nextInt(255), Random().nextInt(255), Random().nextInt(255));
+
+  List<ColorLibReference> availableLibs = [];
+
+  late Future<ColorLib> libFetch;
+
+  Future<List<ColorLibReference>> loadColorLibs() async {
+    final Directory localLibDir = getLocalLibraryDir();
+    if (!await localLibDir.exists()) {
+      await localLibDir.create(recursive: true);
+    }
+    return localLibDir
+        .list()
+        .map((f) {
+          if (f.statSync().type == FileSystemEntityType.file &&
+              f.path.endsWith(".json")) {
+            try {
+              Map<String, dynamic> content =
+                  jsonDecode((f as File).readAsStringSync());
+              String name = content["name"] ?? "Unknown Library";
+              return ColorLibReference(name, f);
+            } on Exception {
+              // ignore failed library
+            }
+          }
+          return ColorLibReference("", File(""));
+        })
+        .where((t) => t.name.isNotEmpty)
+        .toList();
+  }
+
+  List<ColorLibReference> loadColorLibsSync() {
+    final Directory localLibDir = getLocalLibraryDir();
+    if (!localLibDir.existsSync()) {
+      localLibDir.createSync(recursive: true);
+    }
+    List<ColorLibReference> refs = [];
+    for (FileSystemEntity f in localLibDir.listSync()) {
+      if (f.statSync().type == FileSystemEntityType.file &&
+          f.path.endsWith(".json")) {
+        try {
+          Map<String, dynamic> content =
+              jsonDecode((f as File).readAsStringSync());
+          String name = content["name"] ?? "Unknown Library";
+          refs.add(ColorLibReference(name, f));
+        } on Exception {
+          // ignore failed library
+        }
+      }
+    }
+    return refs;
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    availableLibs = loadColorLibsSync();
+    libFetch = availableLibs.isNotEmpty
+        ? availableLibs.first.load()
+        : Future.value(ColorLib(""));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,15 +176,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
 
     return FutureBuilder(
-      future: DefaultAssetBundle.of(context)
-          .loadString("assets/colorlibs/lefrancbourgeois.json"),
-      builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
-        if (snapshot.hasData &&
-            colorLib.index.isEmpty &&
-            colorLib.displayName == ColorLib.emptyName) {
-          colorLib = ColorLib.fromJson(snapshot.data ?? "{}");
-        }
-        Widget content = snapshot.hasData
+      future: libFetch,
+      builder: (BuildContext context, AsyncSnapshot<ColorLib> snapshot) {
+        ColorLib? colorLib = snapshot.hasData ? snapshot.data : null;
+
+        Widget content = snapshot.hasData && colorLib != null
             ? ColorStore(
                 color: color,
                 onColorChange: (Color newColor) {
@@ -121,8 +192,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ColorStore store = ColorStore.of(context);
                   List<(IndexedColor, double)> closest =
                       colorLib.getClosest(color, amount: 12);
-                  int splitIndex = closest
-                      .indexWhere((e) => e.$2 < store.minimumMatchPercentage);
+                  int splitIndex = max(
+                      0,
+                      closest.indexWhere(
+                          (e) => e.$2 < store.minimumMatchPercentage));
                   List<(IndexedColor, double)> valid =
                       closest.sublist(0, splitIndex);
                   List<(IndexedColor, double)> other =
@@ -204,19 +277,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         padding: const EdgeInsets.symmetric(
                             vertical: 10, horizontal: 10),
                         child: Row(
-                          // Column is also a layout widget. It takes a list of children and
-                          // arranges them vertically. By default, it sizes itself to fit its
-                          // children horizontally, and tries to be as tall as its parent.
-                          //
-                          // Column has various properties to control how it sizes itself and
-                          // how it positions its children. Here we use mainAxisAlignment to
-                          // center the children vertically; the main axis here is the vertical
-                          // axis because Columns are vertical (the cross axis would be
-                          // horizontal).
-                          //
-                          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-                          // action in the IDE, or press "p" in the console), to see the
-                          // wireframe for each widget.
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -224,6 +284,69 @@ class _MyHomePageState extends State<MyHomePage> {
                                 width: maxWidth / 3,
                                 child: Column(
                                   children: [
+                                    SizedBox(
+                                      width: double.infinity,
+                                      child: Container(
+                                          padding: const EdgeInsets.all(6),
+                                          child: Row(
+                                            children: [
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 10),
+                                                child: Text(
+                                                    style: Theme.of(context)
+                                                        .textTheme
+                                                        .titleMedium,
+                                                    "Bibliothèque de Couleurs : "),
+                                              ),
+                                              Expanded(
+                                                child: DropdownMenu(
+                                                    menuHeight: 300,
+                                                    initialSelection:
+                                                        availableLibs.isNotEmpty
+                                                            ? availableLibs
+                                                                .first.file
+                                                            : null,
+                                                    onSelected: (f) {
+                                                      if (f == null) {
+                                                        return;
+                                                      }
+                                                      setState(() {
+                                                        libFetch = f
+                                                            .readAsString()
+                                                            .then((v) =>
+                                                                ColorLib
+                                                                    .fromJson(
+                                                                        v));
+                                                      });
+                                                    },
+                                                    dropdownMenuEntries:
+                                                        availableLibs
+                                                            .map((r) =>
+                                                                DropdownMenuEntry(
+                                                                    value:
+                                                                        r.file,
+                                                                    label:
+                                                                        r.name))
+                                                            .toList(
+                                                                growable:
+                                                                    false)),
+                                              ),
+                                              IconButton(
+                                                  tooltip:
+                                                      "Recharger les bibliothèques disponibles",
+                                                  onPressed: () {
+                                                    setState(() {
+                                                      availableLibs =
+                                                          loadColorLibsSync();
+                                                    });
+                                                  },
+                                                  icon: Icon(
+                                                      Icons.refresh_rounded))
+                                            ],
+                                          )),
+                                    ),
                                     Expanded(child: ColorSelector()),
                                     Expanded(child: Container())
                                   ],
@@ -278,7 +401,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Loading default libraries...",
+                      "Chargement des bibliothèques de couleur...",
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                     const SizedBox(

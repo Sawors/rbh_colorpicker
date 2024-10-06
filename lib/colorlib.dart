@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:delta_e/delta_e.dart';
 import 'package:flutter/material.dart';
@@ -25,13 +26,14 @@ class ColorLib {
       if (jsonIndex is List<dynamic>) {
         for (dynamic e in jsonIndex) {
           if (e is Map<String, dynamic>) {
-            if (e.containsKey("name") &&
-                e.containsKey("url") &&
-                e.containsKey("hex")) {
-              String name = e["name"].toString();
-              String url = e["url"].toString();
+            if (e.containsKey("hex")) {
               String hex = e["hex"].toString();
-              int parsed = int.parse("ff${hex.replaceAll("#", "")}", radix: 16);
+              String hexSmall = hex.replaceAll("#", "");
+              hexSmall =
+                  hexSmall.length == 6 ? hexSmall : hexSmall.substring(1);
+              String name = e["name"]?.toString() ?? hexSmall.toUpperCase();
+              String url = e["url"]?.toString() ?? "";
+              int parsed = int.parse("ff$hexSmall", radix: 16);
               index.add(IndexedColor(name, Color(parsed), Uri.tryParse(url)));
             }
           }
@@ -91,6 +93,9 @@ class ColorLib {
   // Color, match percentage
   List<(IndexedColor, double)> getClosest(Color color, {int amount = 5}) {
     List<(IndexedColor, double)> closest = [];
+    if (index.isEmpty) {
+      return closest;
+    }
     for (IndexedColor col in index) {
       closest.add((col, distance(col.color, color)));
     }
@@ -106,4 +111,15 @@ class IndexedColor {
   final Uri? link;
 
   IndexedColor(this.name, this.color, this.link);
+}
+
+class ColorLibReference {
+  final String name;
+  final File file;
+
+  ColorLibReference(this.name, this.file);
+
+  Future<ColorLib> load() {
+    return file.readAsString().then((v) => ColorLib.fromJson(v));
+  }
 }
