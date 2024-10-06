@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rbh_colorpicker/color_selector.dart';
@@ -303,11 +304,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                               Expanded(
                                                 child: DropdownMenu(
                                                     menuHeight: 300,
-                                                    initialSelection:
-                                                        availableLibs.isNotEmpty
-                                                            ? availableLibs
-                                                                .first.file
-                                                            : null,
+                                                    // initialSelection:
+                                                    //     availableLibs.isNotEmpty
+                                                    //         ? availableLibs
+                                                    //             .first.file
+                                                    //         : null,
                                                     onSelected: (f) {
                                                       if (f == null) {
                                                         return;
@@ -343,12 +344,46 @@ class _MyHomePageState extends State<MyHomePage> {
                                                     });
                                                   },
                                                   icon: const Icon(
-                                                      Icons.refresh_rounded))
+                                                      Icons.refresh_rounded)),
+                                              IconButton(
+                                                  tooltip:
+                                                      "Ajouter une bibliothèque",
+                                                  onPressed: () {
+                                                    FilePicker.platform
+                                                        .pickFiles(
+                                                            type: FileType.any,
+                                                            allowedExtensions: [
+                                                          ".json"
+                                                        ]).then((v) {
+                                                      if (v == null) {
+                                                        return;
+                                                      }
+                                                      for (PlatformFile file
+                                                          in v.files) {
+                                                        String? path =
+                                                            file.path;
+                                                        if (path == null) {
+                                                          continue;
+                                                        }
+                                                        File source =
+                                                            File(path);
+                                                        source.copySync(
+                                                            "${getLocalLibraryDir().path}${Platform.pathSeparator}${source.path.split(Platform.pathSeparator).last}");
+                                                      }
+                                                    }).then((_) {
+                                                      setState(() {
+                                                        availableLibs =
+                                                            loadColorLibsSync();
+                                                      });
+                                                    });
+                                                  },
+                                                  icon: const Icon(
+                                                      Icons.download_rounded))
                                             ],
                                           )),
                                     ),
                                     Expanded(child: ColorSelector()),
-                                    Expanded(child: Container())
+                                    const Spacer()
                                   ],
                                 )),
                             Expanded(

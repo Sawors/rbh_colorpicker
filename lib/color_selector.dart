@@ -24,8 +24,7 @@ class _ColorSelectorState extends State<ColorSelector> {
   Widget build(BuildContext context) {
     store = ColorStore.of(context);
     color = store.color;
-    return Card(
-        child: Padding(
+    return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -47,6 +46,6 @@ class _ColorSelectorState extends State<ColorSelector> {
           )
         ],
       ),
-    ));
+    );
   }
 }

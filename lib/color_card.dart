@@ -22,6 +22,18 @@ class ColorCard extends StatelessWidget {
     );
   }
 
+  Function() getUrlOpenAction(IndexedColor color) {
+    if (color.link == null) {
+      return () {};
+    }
+    return () {
+      Uri? link = color.link;
+      if (link != null) {
+        launchUrl(link);
+      }
+    };
+  }
+
   @override
   Widget build(BuildContext context) {
     String hex = "#${color.color.value.toRadixString(16).substring(2)}";
@@ -33,12 +45,8 @@ class ColorCard extends StatelessWidget {
               text: TextSpan(
                 text: color.name,
                 style: Theme.of(context).textTheme.titleMedium,
-              )), () {
-        Uri? link = color.link;
-        if (link != null) {
-          launchUrl(link);
-        }
-      }),
+              )),
+          getUrlOpenAction(color)),
       Tooltip(
         message: "Code copié !",
         triggerMode: TooltipTriggerMode.tap,
@@ -83,12 +91,8 @@ class ColorCard extends StatelessWidget {
                         child: Container(
                           color: color.color,
                         ),
-                      ), () {
-                    Uri? link = color.link;
-                    if (link != null) {
-                      launchUrl(link);
-                    }
-                  })),
+                      ),
+                      getUrlOpenAction(color))),
             ),
             Expanded(
               child: Column(
