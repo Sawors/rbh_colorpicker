@@ -342,7 +342,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                                           loadColorLibsSync();
                                                     });
                                                   },
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                       Icons.refresh_rounded))
                                             ],
                                           )),
