@@ -1,0 +1,602 @@
+{
+  "name": "LeFrancBourgeois",
+  "author": "Sawors",
+  "source": "",
+  "index": [
+    {
+      "name": "Blanc de Titane Zinc",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=blanc-de-titane-zinc",
+      "hex": "#f2f2eb"
+    },
+    {
+      "name": "Blanc d'Argent (Imit.)",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=blanc-d%27argent-imit",
+      "hex": "#f0f1e8"
+    },
+    {
+      "name": "Blanc de Titane",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=blanc-de-titane",
+      "hex": "#f1f1ec"
+    },
+    {
+      "name": "Blanc de Zinc",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=blanc-de-zinc",
+      "hex": "#f0f1e8"
+    },
+    {
+      "name": "Jaune de Naples",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-de-naples",
+      "hex": "#f7be77"
+    },
+    {
+      "name": "Jaune de Naples Clair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-de-naples-clair",
+      "hex": "#fbe19b"
+    },
+    {
+      "name": "Jaune Poterie",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-poterie",
+      "hex": "#f9bd71"
+    },
+    {
+      "name": "Jaune de Naples Foncé",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-de-naples-fonc%C3%A9",
+      "hex": "#eba246"
+    },
+    {
+      "name": "Orange Transparent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=orange-transparent",
+      "hex": "#e95b0d"
+    },
+    {
+      "name": "Jaune de Cadmium Citron",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-de-cadmium-citron",
+      "hex": "#ffe200"
+    },
+    {
+      "name": "Jaune Japonais Clair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-japonais-clair",
+      "hex": "#ffd800"
+    },
+    {
+      "name": "Jaune de Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-de-cadmium",
+      "hex": "#f6a600"
+    },
+    {
+      "name": "Jaune Japonais Citron",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-japonais-citron",
+      "hex": "#ffe900"
+    },
+    {
+      "name": "Jaune Transparent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-transparent",
+      "hex": "#fde500"
+    },
+    {
+      "name": "Jaune Lefranc",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-lefranc",
+      "hex": "#f9e621"
+    },
+    {
+      "name": "Jaune Soufre",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-soufre",
+      "hex": "#dbd540"
+    },
+    {
+      "name": "Jaune Orange Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-orange-sans-cadmium",
+      "hex": "#ec6834"
+    },
+    {
+      "name": "Jaune Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-sans-cadmium",
+      "hex": "#f6a600"
+    },
+    {
+      "name": "Stil de Grain Jaune",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=stil-de-grain-jaune",
+      "hex": "#f5a300"
+    },
+    {
+      "name": "Jaune de Cadmium Orange",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-de-cadmium-orange",
+      "hex": "#ec6834"
+    },
+    {
+      "name": "Jaune Foncé Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-fonc%C3%A9-sans-cadmium",
+      "hex": "#ef8400"
+    },
+    {
+      "name": "Orange Japonais",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=orange-japonais",
+      "hex": "#f49a00"
+    },
+    {
+      "name": "Jaune Sahara",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-sahara",
+      "hex": "#f59f00"
+    },
+    {
+      "name": "Jaune Indien (Imit.)",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-indien-imit",
+      "hex": "#f2b100"
+    },
+    {
+      "name": "Jaune Japonais Foncé",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-japonais-fonc%C3%A9",
+      "hex": "#ffcf00"
+    },
+    {
+      "name": "Jaune Clair Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=jaune-clair-sans-cadmium",
+      "hex": "#fdc400"
+    },
+    {
+      "name": "Laque Carminée Fixe",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=laque-carmin%C3%A9e-fixe",
+      "hex": "#b41d28"
+    },
+    {
+      "name": "Rouge Lefranc",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-lefranc",
+      "hex": "#df1e20"
+    },
+    {
+      "name": "Rouge De Chine",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-de-chine",
+      "hex": "#de353b"
+    },
+    {
+      "name": "Carmin d'Alizarine",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=carmin-d%27alizarine",
+      "hex": "#b01e22"
+    },
+    {
+      "name": "Laque de Garance Cramoisie",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=laque-de-garance-cramoisie",
+      "hex": "#b21b29"
+    },
+    {
+      "name": "Rouge Rubis",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-rubis",
+      "hex": "#c6182c"
+    },
+    {
+      "name": "Rouge de Quinacridone",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-de-quinacridone",
+      "hex": "#e1242c"
+    },
+    {
+      "name": "Rouge Foncé Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-fonc%C3%A9-sans-cadmium",
+      "hex": "#a62f33"
+    },
+    {
+      "name": "Rouge Vif Transparent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-vif-transparent",
+      "hex": "#ca2424"
+    },
+    {
+      "name": "Rouge de Cadmium Moyen",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-de-cadmium-moyen",
+      "hex": "#d12c2e"
+    },
+    {
+      "name": "Rouge Moyen Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-moyen-sans-cadmium",
+      "hex": "#d12c2e"
+    },
+    {
+      "name": "Rouge Clair Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-clair-sans-cadmium",
+      "hex": "#e53628"
+    },
+    {
+      "name": "Rouge Vermillon",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-vermillon",
+      "hex": "#e42c1b"
+    },
+    {
+      "name": "Rouge de Cadmium Clair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-de-cadmium-clair",
+      "hex": "#e53628"
+    },
+    {
+      "name": "Violet Outremer",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=violet-outremer",
+      "hex": "#542f88"
+    },
+    {
+      "name": "Violet Minéral Clair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=violet-min%C3%A9ral-clair",
+      "hex": "#752776"
+    },
+    {
+      "name": "Laque Pourpre",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=laque-pourpre",
+      "hex": "#642734"
+    },
+    {
+      "name": "Laque de Garance Rose",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=laque-de-garance-rose",
+      "hex": "#d6333d"
+    },
+    {
+      "name": "Violet de Dioxazine",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=violet-de-dioxazine",
+      "hex": "#441d60"
+    },
+    {
+      "name": "Mauve Bleuté",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=mauve-bleut%C3%A9",
+      "hex": "#602c79"
+    },
+    {
+      "name": "Violet de Cobalt",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=violet-de-cobalt",
+      "hex": "#994995"
+    },
+    {
+      "name": "Magenta",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=magenta",
+      "hex": "#a71a79"
+    },
+    {
+      "name": "Rouge Grenat",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-grenat",
+      "hex": "#901a2e"
+    },
+    {
+      "name": "Violet Permanent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=violet-permanent",
+      "hex": "#a71939"
+    },
+    {
+      "name": "Rose Poterie",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rose-poterie",
+      "hex": "#ef877d"
+    },
+    {
+      "name": "Bleu de Céruléum (Imit.)",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-de-c%C3%A9rul%C3%A9um-imit",
+      "hex": "#0857a3"
+    },
+    {
+      "name": "Bleu Saphir",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-saphir",
+      "hex": "#004874"
+    },
+    {
+      "name": "Cobalt Turquoise Clair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=cobalt-turquoise-clair",
+      "hex": "#00a4ad"
+    },
+    {
+      "name": "Bleu de Cobalt Turquoise",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-de-cobalt-turquoise",
+      "hex": "#006586"
+    },
+    {
+      "name": "Bleu Océan",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-oc%C3%A9an",
+      "hex": "#008ed1"
+    },
+    {
+      "name": "Bleu Espace",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-espace",
+      "hex": "#008dcd"
+    },
+    {
+      "name": "Bleu de Céruléum",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-de-c%C3%A9rul%C3%A9um",
+      "hex": "#0072ba"
+    },
+    {
+      "name": "Indigo",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=indigo",
+      "hex": "#282d44"
+    },
+    {
+      "name": "Bleu Hoggar",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-hoggar",
+      "hex": "#37246e"
+    },
+    {
+      "name": "Bleu Hortensia",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-hortensia",
+      "hex": "#2f1e64"
+    },
+    {
+      "name": "Bleu de Cobalt (Imit.)",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-de-cobalt-imit",
+      "hex": "#244092"
+    },
+    {
+      "name": "Bleu Rex",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-rex",
+      "hex": "#638dc8"
+    },
+    {
+      "name": "Bleu de Cobalt Lefranc",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-de-cobalt-lefranc",
+      "hex": "#3b2783"
+    },
+    {
+      "name": "Bleu Outremer (Nuance Verte)",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-outremer-nuance-verte",
+      "hex": "#3d2683"
+    },
+    {
+      "name": "Bleu de Cobalt",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-de-cobalt",
+      "hex": "#324c9b"
+    },
+    {
+      "name": "Bleu Outremer Foncé",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-outremer-fonc%C3%A9",
+      "hex": "#412682"
+    },
+    {
+      "name": "Bleu Indien",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-indien",
+      "hex": "#3e2470"
+    },
+    {
+      "name": "Bleu de Prusse",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bleu-de-prusse",
+      "hex": "#281954"
+    },
+    {
+      "name": "Vert Emeraude",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-emeraude",
+      "hex": "#006c54"
+    },
+    {
+      "name": "Vert Armor Phtalo",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-armor-phtalo",
+      "hex": "#005e40"
+    },
+    {
+      "name": "Vert Japonais Clair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-japonais-clair",
+      "hex": "#00887f"
+    },
+    {
+      "name": "Vert Anglais N° 5",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-anglais-n%C2%B0-5",
+      "hex": "#c3d11d"
+    },
+    {
+      "name": "Terre Verte",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-verte",
+      "hex": "#81a578"
+    },
+    {
+      "name": "Stil de Grain Vert",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=stil-de-grain-vert",
+      "hex": "#b28c13"
+    },
+    {
+      "name": "Vert de Vessie Permanent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-de-vessie-permanent",
+      "hex": "#5b7025"
+    },
+    {
+      "name": "Vert de Prusse",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-de-prusse",
+      "hex": "#1b3b22"
+    },
+    {
+      "name": "Vert Oxyde de Chrome",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-oxyde-de-chrome",
+      "hex": "#4e664d"
+    },
+    {
+      "name": "Vert Anglais N° 1",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-anglais-n%C2%B0-1",
+      "hex": "#345348"
+    },
+    {
+      "name": "Vert Anglais N° 2",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-anglais-n%C2%B0-2",
+      "hex": "#006c39"
+    },
+    {
+      "name": "Vert Clair Sans Cadmium",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-clair-sans-cadmium",
+      "hex": "#7db338"
+    },
+    {
+      "name": "Vert Japonais Moyen",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-japonais-moyen",
+      "hex": "#006d44"
+    },
+    {
+      "name": "Vert Japonais Foncé",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-japonais-fonc%C3%A9",
+      "hex": "#00573d"
+    },
+    {
+      "name": "Vert Véronèse (Imit.)",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-v%C3%A9ron%C3%A8se-imit",
+      "hex": "#008662"
+    },
+    {
+      "name": "Vert Armor",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-armor",
+      "hex": "#004540"
+    },
+    {
+      "name": "Vert Olive",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=vert-olive",
+      "hex": "#362c1f"
+    },
+    {
+      "name": "Terre d'Ombre Naturelle",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-d%27ombre-naturelle",
+      "hex": "#644e3c"
+    },
+    {
+      "name": "Terre d'Ombre Naturelle Transparente",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-d%27ombre-naturelle-transparente",
+      "hex": "#523c33"
+    },
+    {
+      "name": "Brun Transparent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=brun-transparent",
+      "hex": "#5b2a29"
+    },
+    {
+      "name": "Brun Van Dyck",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=brun-van-dyck",
+      "hex": "#482d2e"
+    },
+    {
+      "name": "Brun de Mars",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=brun-de-mars",
+      "hex": "#613736"
+    },
+    {
+      "name": "Terre de Sienne Brulée Transparente",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-de-sienne-brul%C3%A9e-transparente",
+      "hex": "#9f3a31"
+    },
+    {
+      "name": "Ocre Rouge Transparente",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=ocre-rouge-transparente",
+      "hex": "#63261e"
+    },
+    {
+      "name": "Rouge de Mars",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-de-mars",
+      "hex": "#853f36"
+    },
+    {
+      "name": "Ocre de Chair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=ocre-de-chair",
+      "hex": "#9b4937"
+    },
+    {
+      "name": "Terre de Sienne Naturelle",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-de-sienne-naturelle",
+      "hex": "#b26b2e"
+    },
+    {
+      "name": "Ocre Jaune Transparent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=ocre-jaune-transparent",
+      "hex": "#d98422"
+    },
+    {
+      "name": "Ocre d'Or",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=ocre-d%27or",
+      "hex": "#ae7739"
+    },
+    {
+      "name": "Ocre Jaune Clair",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=ocre-jaune-clair",
+      "hex": "#c0853b"
+    },
+    {
+      "name": "Ocre Jaune",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=ocre-jaune",
+      "hex": "#a3783e"
+    },
+    {
+      "name": "Rouge de Venise",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-de-venise",
+      "hex": "#bb4526"
+    },
+    {
+      "name": "Rouge Indien",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=rouge-indien",
+      "hex": "#823f3b"
+    },
+    {
+      "name": "Terre de Sienne Brulée",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-de-sienne-brul%C3%A9e",
+      "hex": "#783b31"
+    },
+    {
+      "name": "Caput Mortuum",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=caput-mortuum",
+      "hex": "#6d4243"
+    },
+    {
+      "name": "Terre d'Ombre Brulée",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-d%27ombre-brul%C3%A9e",
+      "hex": "#513634"
+    },
+    {
+      "name": "Noir de Pérylène",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=noir-de-p%C3%A9ryl%C3%A8ne",
+      "hex": "#32332b"
+    },
+    {
+      "name": "Noir d'Ivoire",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=noir-d%27ivoire",
+      "hex": "#242021"
+    },
+    {
+      "name": "Noir de Mars",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=noir-de-mars",
+      "hex": "#3b383a"
+    },
+    {
+      "name": "Gris Fusain",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=gris-fusain",
+      "hex": "#3b3a3d"
+    },
+    {
+      "name": "Terre de Cassel",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=terre-de-cassel",
+      "hex": "#231e23"
+    },
+    {
+      "name": "Gris de Payne",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=gris-de-payne",
+      "hex": "#383a45"
+    },
+    {
+      "name": "Gris Jaune",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=gris-jaune",
+      "hex": "#958b7b"
+    },
+    {
+      "name": "Noir de Lampe",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=noir-de-lampe",
+      "hex": "#2d292b"
+    },
+    {
+      "name": "Or Renaissance",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=or-renaissance",
+      "hex": "#c98c5b"
+    },
+    {
+      "name": "Or",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=or",
+      "hex": "#ddb878"
+    },
+    {
+      "name": "Cuivre",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=cuivre",
+      "hex": "#c26347"
+    },
+    {
+      "name": "Argent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=argent",
+      "hex": "#a3a3a4"
+    },
+    {
+      "name": "Blanc Iridescent",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=blanc-iridescent",
+      "hex": "#e1ded5"
+    },
+    {
+      "name": "Bronze",
+      "url": "https://www.lefrancbourgeois.com/fr/produit/peinture-a-lhuile-extra-fine/?attribute_pa_lb_colour_name=bronze",
+      "hex": "#866b4f"
+    }
+  ]
+}
