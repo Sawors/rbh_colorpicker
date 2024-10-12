@@ -15,7 +15,7 @@ void main() {
 }
 
 class ColorStore extends InheritedWidget {
-  ColorStore(
+  const ColorStore(
       {super.key,
       required this.color,
       required this.onColorChange,

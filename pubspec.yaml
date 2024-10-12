@@ -39,6 +39,7 @@ dependencies:
   flutter_colorpicker: ^1.1.0
   delta_e: ^0.2.0
   file_picker: ^8.1.2
+  yaml: ^3.1.2
 
 dev_dependencies:
   flutter_test:
