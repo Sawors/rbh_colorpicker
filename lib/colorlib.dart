@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:delta_e/delta_e.dart';
 import 'package:flutter/material.dart';
+import 'package:rbh_colorpicker/color_card.dart';
 
 enum DistanceComputeMethod { hsvWeighted, rgb, hsv, deltaE }
 
@@ -32,9 +33,11 @@ class ColorLib {
               hexSmall =
                   hexSmall.length == 6 ? hexSmall : hexSmall.substring(1);
               String name = e["name"]?.toString() ?? hexSmall.toUpperCase();
+              String? reference = e["reference"]?.toString();
               String url = e["url"]?.toString() ?? "";
               int parsed = int.parse("ff$hexSmall", radix: 16);
-              index.add(IndexedColor(name, Color(parsed), Uri.tryParse(url)));
+              index.add(IndexedColor(
+                  name, reference, Color(parsed), Uri.tryParse(url)));
             }
           }
         }
@@ -107,10 +110,16 @@ class ColorLib {
 
 class IndexedColor {
   final String name;
-  final Color color;
+  final String? reference;
+  late final Color color;
   final Uri? link;
 
-  IndexedColor(this.name, this.color, this.link);
+  ColorCard? _colorCard;
+
+  ColorCard get colorCard =>
+      _colorCard ?? ColorCard(color: this, matchPercentage: 0);
+
+  IndexedColor(this.name, this.reference, this.color, this.link);
 }
 
 class ColorLibReference {

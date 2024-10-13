@@ -203,7 +203,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       closest.sublist(splitIndex);
                   TextStyle? interTitleStyle =
                       Theme.of(context).textTheme.headlineSmall;
-
                   Widget bestMatchWidget = valid.isNotEmpty
                       ? Expanded(
                           child: SizedBox(
@@ -223,9 +222,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           maxCrossAxisExtent: 400,
                                           childAspectRatio: 3,
                                           children: valid
-                                              .map((t) => ColorCard(
-                                                  color: t.$1,
-                                                  matchPercentage: t.$2))
+                                              .map((t) => t.$1.colorCard)
                                               .toList(),
                                         )
                                         // ListView.builder(
