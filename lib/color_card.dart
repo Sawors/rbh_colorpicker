@@ -91,7 +91,7 @@ class ColorCard extends StatelessWidget {
     ];
 
     bool refBehaviour = color.reference != null && color.reference!.isNotEmpty;
-    if (refBehaviour) {
+    if (refBehaviour && color.reference != color.name) {
       stack.add(FittedBox(
         fit: BoxFit.fitWidth,
         child: Padding(
